@@ -10,13 +10,13 @@ public class esercizio_2 {
         concat2("Sonia", 30);
     }
 
-    public static String concat(String name, Integer years) {
-        return name + " ha " + years.toString() + " anni";
+    public static String concat(String name, int years) {
+        return name + " ha " + years + " anni";
     }
 
-    public static void concat2(String name, Integer yearsA) {
-        // ;
-        System.out.println(concat("Luca", 20));
+    public static void concat2(String name, int years) {
+       
+        System.out.println(concat(name, years));
     }
 
 }

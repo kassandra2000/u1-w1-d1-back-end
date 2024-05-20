@@ -8,30 +8,34 @@ public class esercizio_3 {
             System.out.println(arrayOfStrings);
         }
 
-        //String[] arr = insertIntoArray(arrayOfStrings, numberSix);
-        //for (int i = 0; i <arr.length ; i++) {
+        String[] arr = insertIntoArray(arrayOfStrings, numberSix);
+        for (int i = 0; i < arr.length; i++) {
 
-        //System.out.println(arr[i]);
-        //}
+            System.out.println(arr[i]);
+        }
 
-        insertIntoArray(arrayOfStrings, numberSix);
+        //System.out.println(insertIntoArray(arrayOfStrings, numberSix););
+
+
 
 
     }
 
-    public static void insertIntoArray(String[] arr, String numStr) {
+    public static String[] insertIntoArray(String[] arr, String numStr) {
         String[] newArrayOfStrings;
         newArrayOfStrings = new String[6];
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < newArrayOfStrings.length; i++) {
             //System.out.println(arr[i]);
-            if (i == 2) {
-                System.out.println(newArrayOfStrings[i] = numStr);
+            if (i < 2) {
+                newArrayOfStrings[i] = arr[i];
+            } else if (i == 2) {
+                newArrayOfStrings[i] = numStr;
+            } else {
+                newArrayOfStrings[i] = arr[i - 1];
             }
-            newArrayOfStrings[i] = arr[i];
-            System.out.println(newArrayOfStrings[i]);
-
 
         }
+        return newArrayOfStrings;
 
 
     }
